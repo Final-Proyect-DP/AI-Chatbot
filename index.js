@@ -6,7 +6,8 @@ const userRoutes = require('./routes/userRoutes');
 const logger = require('./config/logger');
 const redisClient = require('./config/redisConfig');
 const swaggerDocs = require('./config/swaggerConfig');
-
+const userLogoutConsumer = require('./consumers/userLogoutConsumer');
+const authLoginConsumer = require('./consumers/authLoginConsumer');
 const app = express();
 const port = process.env.PORT || 3030;
 
@@ -25,17 +26,28 @@ app.use('/api', userRoutes);
 
 // Manejador de errores global
 app.use((err, req, res, next) => {
-  logger.error('Error no manejado:', err);
+  logger.error('Unhandled error:', err);
   res.status(500).json({ 
-    error: 'Error interno del servidor',
+    error: 'Internal server error',
     message: process.env.NODE_ENV === 'development' ? err.message : undefined
   });
 });
 
-// Iniciar el servidor inmediatamente
-app.listen(port, '0.0.0.0', () => {
-  logger.info(`Servidor corriendo en http://0.0.0.0:${port}`);
-  logger.info(`Documentación disponible en http://0.0.0.0:${port}/api-docs`);
+// Iniciar el servidor y los consumidores
+app.listen(port, '0.0.0.0', async () => {
+  logger.info(`Server running at http://0.0.0.0:${port}`);
+  logger.info(`Documentation available at http://0.0.0.0:${port}/api-docs`);
+  
+  try {
+    // Inicializar consumidores de Kafka
+    await authLoginConsumer.run();
+    logger.info('Login consumer initialized successfully');
+    
+    await userLogoutConsumer.run();
+    logger.info('Logout consumer initialized successfully');
+  } catch (error) {
+    logger.error('Error initializing Kafka consumers:', error);
+  }
 });
 
 // Manejo de señales de terminación
@@ -43,13 +55,13 @@ process.on('SIGTERM', gracefulShutdown);
 process.on('SIGINT', gracefulShutdown);
 
 async function gracefulShutdown() {
-  logger.info('Iniciando apagado graceful...');
+  logger.info('Starting graceful shutdown...');
   if (redisClient.isReady) {
     try {
       await redisClient.quit();
-      logger.info('Conexión a Redis cerrada');
+      logger.info('Redis connection closed');
     } catch (error) {
-      logger.error('Error al cerrar Redis:', error);
+      logger.error('Error closing Redis:', error);
     }
   }
   process.exit(0);

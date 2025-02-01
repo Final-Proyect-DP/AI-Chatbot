@@ -10,22 +10,22 @@ const chatController = {
         const { message } = req.body;
 
         if (!message) {
-            return res.status(400).json({ error: 'Mensaje requerido' });
+            return res.status(400).json({ error: 'Message required' });
         }
 
         try {
             // Obtener historial del chat
             let chatHistory = await redisUtils.getChatHistory(userId) || [];
-            logger.info(`Historial recuperado para usuario ${userId}: ${chatHistory.length} mensajes`);
+            logger.info(`History retrieved for user ${userId}: ${chatHistory.length} messages`);
 
             // Construir el contexto con el historial
             const conversationContext = chatHistory.map(msg => 
-                `${msg.role}: ${msg.content}`
+                `${msg.role === 'usuario' ? 'user' : 'assistant'}: ${msg.content}`
             ).join('\n');
 
             // Preparar prompt con contexto
             const fullPrompt = conversationContext + 
-                             `\nUsuario: ${message}\nAsistente:`;
+                             `\nUser: ${message}\nAssistant:`;
 
             // Generar respuesta
             const model = genAI.getGenerativeModel({ model: "gemini-pro" });
@@ -34,8 +34,8 @@ const chatController = {
 
             // Actualizar historial
             chatHistory.push(
-                { role: 'usuario', content: message },
-                { role: 'asistente', content: botMessage }
+                { role: 'user', content: message },
+                { role: 'assistant', content: botMessage }
             );
 
             // Mantener solo los últimos 10 mensajes para evitar tokens excesivos
@@ -45,15 +45,15 @@ const chatController = {
 
             // Guardar historial actualizado
             await redisUtils.setChatHistory(userId, chatHistory);
-            logger.info(`Historial actualizado para usuario ${userId}`);
+            logger.info(`History updated for user ${userId}`);
 
             res.json({
                 userMessage: message,
                 botMessage
             });
         } catch (error) {
-            logger.error('Error en chat:', error);
-            res.status(500).json({ error: 'Error al procesar el mensaje' });
+            logger.error('Error in chat:', error);
+            res.status(500).json({ error: 'Error processing message' });
         }
     }
 };

@@ -4,7 +4,7 @@ const userService = require('../services/userService');
 const redisUtils = require('../utils/redisUtils');
 require('dotenv').config();
 
-const consumer = kafka.consumer({ groupId: 'edit-service-logout-group' });
+const consumer = kafka.consumer({ groupId: 'AI-Chatbot-service-logout-group' });
 
 const run = async () => {
   try {

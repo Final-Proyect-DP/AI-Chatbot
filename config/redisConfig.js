@@ -6,36 +6,36 @@ const redisClient = redis.createClient({
     url: `redis://${process.env.REDIS_HOST || 'localhost'}:${process.env.REDIS_PORT || 6379}`,
     socket: {
         reconnectStrategy: (retries) => {
-            logger.info(`Intento de reconexión a Redis #${retries}`);
+            logger.info(`Redis reconnection attempt #${retries}`);
             return Math.min(retries * 50, 1000);
         }
     }
 });
 
 redisClient.on('error', (err) => {
-    logger.error('Error de conexión Redis:', err);
+    logger.error('Redis connection error:', err);
 });
 
 redisClient.on('connect', () => {
-    logger.info('Conexión establecida con Redis');
+    logger.info('Connection established with Redis');
 });
 
 redisClient.on('ready', () => {
-    logger.info('Cliente Redis está listo para operaciones');
+    logger.info('Redis client is ready for operations');
 });
 
 redisClient.on('reconnecting', () => {
-    logger.warn('Intentando reconectar a Redis...');
+    logger.warn('Attempting to reconnect to Redis...');
 });
 
-// Conectar a Redis
+// Connect to Redis
 (async () => {
     try {
-        logger.info('Iniciando conexión a Redis...');
+        logger.info('Starting connection to Redis...');
         await redisClient.connect();
-        logger.info('Conexión a Redis establecida exitosamente');
+        logger.info('Connection to Redis established successfully');
     } catch (err) {
-        logger.error('Error al conectar con Redis:', err);
+        logger.error('Error connecting to Redis:', err);
     }
 })();
 

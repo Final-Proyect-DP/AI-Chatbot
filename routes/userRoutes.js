@@ -7,7 +7,7 @@ const chatController = require('../controllers/chatController');
  * @swagger
  * /api/chat:
  *   post:
- *     summary: Enviar un mensaje al chatbot
+ *     summary: Send a message to the chatbot
  *     parameters:
  *       - in: query
  *         name: id
@@ -32,10 +32,10 @@ const chatController = require('../controllers/chatController');
  *             properties:
  *               message:
  *                 type: string
- *                 example: "¿Cómo estás?"
+ *                 example: "How are you?"
  *     responses:
  *       200:
- *         description: Respuesta exitosa del chatbot
+ *         description: Successful chatbot response
  *         content:
  *           application/json:
  *             schema:
@@ -43,14 +43,14 @@ const chatController = require('../controllers/chatController');
  *               properties:
  *                 userMessage:
  *                   type: string
- *                   example: "¿Cómo estás?"
+ *                   example: "How are you?"
  *                 botMessage:
  *                   type: string
- *                   example: "¡Hola! Estoy aquí para ayudarte."
+ *                   example: "Hello! I'm here to help."
  *       401:
- *         description: Token inválido o ID no proporcionado
+ *         description: Invalid token or ID not provided
  *       500:
- *         description: Error del servidor
+ *         description: Server error
  */
 router.post('/chat', verifyToken, chatController.handleChat);
 

@@ -263,3 +263,718 @@
 2025-02-01T01:28:55.374Z [info]: Conexión a Redis establecida exitosamente
 2025-02-01T01:31:02.086Z [info]: Iniciando apagado graceful...
 2025-02-01T01:31:02.094Z [info]: Conexión a Redis cerrada
+2025-02-01T14:27:15.861Z [info]: Iniciando conexión a Redis...
+2025-02-01T14:27:16.237Z [info]: Servidor corriendo en http://0.0.0.0:3030
+2025-02-01T14:27:16.238Z [info]: Documentación disponible en http://0.0.0.0:3030/api-docs
+2025-02-01T14:27:16.245Z [info]: Conexión establecida con Redis
+2025-02-01T14:27:16.250Z [info]: Cliente Redis está listo para operaciones
+2025-02-01T14:27:16.251Z [info]: Conexión a Redis establecida exitosamente
+2025-02-01T14:27:35.283Z [info]: Iniciando verificación de token para userId: 123
+2025-02-01T14:27:35.284Z [info]: Verificando JWT...
+2025-02-01T14:27:35.285Z [error]: Error en verificación de token: jwt malformed
+2025-02-01T14:29:03.519Z [info]: Iniciando verificación de token para userId: undefined
+2025-02-01T14:29:03.520Z [warn]: Verificación fallida: ID faltante
+2025-02-01T14:32:23.470Z [info]: Iniciando verificación de token para userId: id
+2025-02-01T14:32:23.471Z [info]: Verificando JWT...
+2025-02-01T14:32:23.472Z [error]: Error en verificación de token: jwt malformed
+2025-02-01T14:32:43.124Z [info]: Iniciando verificación de token para userId: userId
+2025-02-01T14:32:43.124Z [info]: Verificando JWT...
+2025-02-01T14:32:43.125Z [error]: Error en verificación de token: jwt malformed
+2025-02-01T14:35:14.329Z [info]: Iniciando apagado graceful...
+2025-02-01T14:35:14.332Z [info]: Conexión a Redis cerrada
+2025-02-01T14:35:16.699Z [info]: Iniciando conexión a Redis...
+2025-02-01T14:35:16.915Z [info]: Servidor corriendo en http://0.0.0.0:3030
+2025-02-01T14:35:16.915Z [info]: Documentación disponible en http://0.0.0.0:3030/api-docs
+2025-02-01T14:35:16.922Z [info]: Conexión establecida con Redis
+2025-02-01T14:35:16.928Z [info]: Cliente Redis está listo para operaciones
+2025-02-01T14:35:16.929Z [info]: Conexión a Redis establecida exitosamente
+2025-02-01T14:36:39.423Z [info]: Iniciando verificación de token para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:36:39.424Z [info]: Verificando JWT...
+2025-02-01T14:36:39.428Z [info]: JWT verificado exitosamente
+2025-02-01T14:36:39.428Z [info]: Buscando token en Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:36:39.429Z [info]: Intentando obtener token de Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:36:39.430Z [info]: Resultado de Redis: Token encontrado
+2025-02-01T14:36:39.431Z [info]: Verificación completada exitosamente
+2025-02-01T14:36:39.431Z [info]: Obteniendo historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:36:39.432Z [info]: Historial recuperado para usuario 679c047bd4299871aa4a5d73: 6 mensajes
+2025-02-01T14:36:40.672Z [info]: Guardando historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:36:40.674Z [info]: Historial guardado exitosamente
+2025-02-01T14:36:40.675Z [info]: Historial actualizado para usuario 679c047bd4299871aa4a5d73
+2025-02-01T14:36:57.560Z [info]: Iniciando verificación de token para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:36:57.561Z [info]: Verificando JWT...
+2025-02-01T14:36:57.562Z [info]: JWT verificado exitosamente
+2025-02-01T14:36:57.563Z [info]: Buscando token en Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:36:57.563Z [info]: Intentando obtener token de Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:36:57.564Z [info]: Resultado de Redis: Token encontrado
+2025-02-01T14:36:57.564Z [info]: Verificación completada exitosamente
+2025-02-01T14:36:57.564Z [info]: Obteniendo historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:36:57.566Z [info]: Historial recuperado para usuario 679c047bd4299871aa4a5d73: 8 mensajes
+2025-02-01T14:36:59.132Z [info]: Guardando historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:36:59.134Z [info]: Historial guardado exitosamente
+2025-02-01T14:36:59.135Z [info]: Historial actualizado para usuario 679c047bd4299871aa4a5d73
+2025-02-01T14:37:13.581Z [info]: Iniciando verificación de token para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:37:13.581Z [info]: Verificando JWT...
+2025-02-01T14:37:13.585Z [info]: JWT verificado exitosamente
+2025-02-01T14:37:13.586Z [info]: Buscando token en Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:37:13.586Z [info]: Intentando obtener token de Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:37:13.587Z [info]: Resultado de Redis: Token encontrado
+2025-02-01T14:37:13.588Z [info]: Verificación completada exitosamente
+2025-02-01T14:37:13.588Z [info]: Obteniendo historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:37:13.588Z [info]: Historial recuperado para usuario 679c047bd4299871aa4a5d73: 10 mensajes
+2025-02-01T14:37:17.796Z [info]: Guardando historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:37:17.799Z [info]: Historial guardado exitosamente
+2025-02-01T14:37:17.800Z [info]: Historial actualizado para usuario 679c047bd4299871aa4a5d73
+2025-02-01T14:38:59.616Z [info]: Iniciando verificación de token para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:38:59.617Z [info]: Verificando JWT...
+2025-02-01T14:38:59.618Z [info]: JWT verificado exitosamente
+2025-02-01T14:38:59.619Z [info]: Buscando token en Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:38:59.619Z [info]: Intentando obtener token de Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:38:59.621Z [info]: Resultado de Redis: Token encontrado
+2025-02-01T14:38:59.621Z [info]: Verificación completada exitosamente
+2025-02-01T14:38:59.621Z [info]: Obteniendo historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:38:59.623Z [info]: Historial recuperado para usuario 679c047bd4299871aa4a5d73: 12 mensajes
+2025-02-01T14:39:00.766Z [info]: Guardando historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:39:00.768Z [info]: Historial guardado exitosamente
+2025-02-01T14:39:00.768Z [info]: Historial actualizado para usuario 679c047bd4299871aa4a5d73
+2025-02-01T14:39:21.915Z [info]: Iniciando verificación de token para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:39:21.916Z [info]: Verificando JWT...
+2025-02-01T14:39:21.917Z [info]: JWT verificado exitosamente
+2025-02-01T14:39:21.918Z [info]: Buscando token en Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:39:21.918Z [info]: Intentando obtener token de Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:39:21.919Z [info]: Resultado de Redis: Token encontrado
+2025-02-01T14:39:21.920Z [info]: Verificación completada exitosamente
+2025-02-01T14:39:21.920Z [info]: Obteniendo historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:39:21.920Z [info]: Historial recuperado para usuario 679c047bd4299871aa4a5d73: 14 mensajes
+2025-02-01T14:39:23.135Z [info]: Guardando historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:39:23.135Z [info]: Historial guardado exitosamente
+2025-02-01T14:39:23.136Z [info]: Historial actualizado para usuario 679c047bd4299871aa4a5d73
+2025-02-01T14:39:59.037Z [info]: Iniciando verificación de token para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:39:59.038Z [info]: Verificando JWT...
+2025-02-01T14:39:59.039Z [info]: JWT verificado exitosamente
+2025-02-01T14:39:59.039Z [info]: Buscando token en Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:39:59.039Z [info]: Intentando obtener token de Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:39:59.040Z [info]: Resultado de Redis: Token encontrado
+2025-02-01T14:39:59.041Z [info]: Verificación completada exitosamente
+2025-02-01T14:39:59.041Z [info]: Obteniendo historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:39:59.042Z [info]: Historial recuperado para usuario 679c047bd4299871aa4a5d73: 16 mensajes
+2025-02-01T14:40:03.613Z [info]: Guardando historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:40:03.617Z [info]: Historial guardado exitosamente
+2025-02-01T14:40:03.618Z [info]: Historial actualizado para usuario 679c047bd4299871aa4a5d73
+2025-02-01T14:40:36.719Z [info]: Iniciando verificación de token para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:40:36.719Z [info]: Verificando JWT...
+2025-02-01T14:40:36.720Z [info]: JWT verificado exitosamente
+2025-02-01T14:40:36.721Z [info]: Buscando token en Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:40:36.721Z [info]: Intentando obtener token de Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:40:36.722Z [info]: Resultado de Redis: Token encontrado
+2025-02-01T14:40:36.722Z [info]: Verificación completada exitosamente
+2025-02-01T14:40:36.879Z [info]: Iniciando verificación de token para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:40:36.880Z [info]: Verificando JWT...
+2025-02-01T14:40:36.881Z [info]: JWT verificado exitosamente
+2025-02-01T14:40:36.881Z [info]: Buscando token en Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:40:36.882Z [info]: Intentando obtener token de Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:40:36.882Z [info]: Resultado de Redis: Token encontrado
+2025-02-01T14:40:36.883Z [info]: Verificación completada exitosamente
+2025-02-01T14:56:32.006Z [info]: Iniciando apagado graceful...
+2025-02-01T14:56:32.020Z [info]: Conexión a Redis cerrada
+2025-02-01T14:56:35.023Z [info]: Iniciando conexión a Redis...
+2025-02-01T14:56:35.294Z [info]: Servidor corriendo en http://0.0.0.0:3030
+2025-02-01T14:56:35.295Z [info]: Documentación disponible en http://0.0.0.0:3030/api-docs
+2025-02-01T14:56:35.305Z [info]: Conexión establecida con Redis
+2025-02-01T14:56:35.312Z [info]: Cliente Redis está listo para operaciones
+2025-02-01T14:56:35.314Z [info]: Conexión a Redis establecida exitosamente
+2025-02-01T14:56:40.610Z [info]: Iniciando verificación de token para userId: userId
+2025-02-01T14:56:40.610Z [info]: Verificando JWT...
+2025-02-01T14:56:40.611Z [error]: Error en verificación de token: jwt malformed
+2025-02-01T14:56:57.706Z [info]: Iniciando apagado graceful...
+2025-02-01T14:56:57.710Z [info]: Conexión a Redis cerrada
+2025-02-01T14:57:02.103Z [info]: Iniciando conexión a Redis...
+2025-02-01T14:57:02.286Z [info]: Servidor corriendo en http://0.0.0.0:3030
+2025-02-01T14:57:02.287Z [info]: Documentación disponible en http://0.0.0.0:3030/api-docs
+2025-02-01T14:57:02.292Z [info]: Conexión establecida con Redis
+2025-02-01T14:57:02.298Z [info]: Cliente Redis está listo para operaciones
+2025-02-01T14:57:02.299Z [info]: Conexión a Redis establecida exitosamente
+2025-02-01T14:57:18.780Z [info]: Iniciando verificación de token para userId: 123
+2025-02-01T14:57:18.781Z [info]: Verificando JWT...
+2025-02-01T14:57:18.782Z [error]: Error en verificación de token: jwt malformed
+2025-02-01T14:58:25.787Z [info]: Iniciando apagado graceful...
+2025-02-01T14:58:25.790Z [info]: Conexión a Redis cerrada
+2025-02-01T14:58:28.490Z [info]: Iniciando conexión a Redis...
+2025-02-01T14:58:28.724Z [info]: Server running at http://0.0.0.0:3030
+2025-02-01T14:58:28.724Z [info]: Documentation available at http://0.0.0.0:3030/api-docs
+2025-02-01T14:58:28.731Z [info]: Conexión establecida con Redis
+2025-02-01T14:58:28.736Z [info]: Cliente Redis está listo para operaciones
+2025-02-01T14:58:28.737Z [info]: Conexión a Redis establecida exitosamente
+2025-02-01T14:58:44.208Z [info]: Starting token verification for userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:58:44.209Z [info]: Verifying JWT...
+2025-02-01T14:58:44.213Z [info]: JWT verified successfully
+2025-02-01T14:58:44.214Z [info]: Looking for token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:58:44.214Z [info]: Intentando obtener token de Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:58:44.216Z [info]: Resultado de Redis: Token encontrado
+2025-02-01T14:58:44.216Z [info]: Verification completed successfully
+2025-02-01T14:58:44.217Z [info]: Obteniendo historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:58:44.218Z [info]: History retrieved for user 679c047bd4299871aa4a5d73: 18 messages
+2025-02-01T14:58:46.206Z [info]: Guardando historial de chat para userId: 679c047bd4299871aa4a5d73
+2025-02-01T14:58:46.208Z [info]: Historial guardado exitosamente
+2025-02-01T14:58:46.208Z [info]: History updated for user 679c047bd4299871aa4a5d73
+2025-02-01T15:00:26.419Z [info]: Starting graceful shutdown...
+2025-02-01T15:00:26.425Z [info]: Redis connection closed
+2025-02-01T15:03:54.384Z [info]: Starting connection to Redis...
+2025-02-01T15:03:54.879Z [info]: Server running at http://0.0.0.0:3030
+2025-02-01T15:03:54.880Z [info]: Documentation available at http://0.0.0.0:3030/api-docs
+2025-02-01T15:03:54.898Z [info]: Connection established with Redis
+2025-02-01T15:03:54.924Z [info]: Redis client is ready for operations
+2025-02-01T15:03:54.925Z [info]: Connection to Redis established successfully
+2025-02-01T15:03:54.927Z [info]: Create Consumer: Kafka consumer connected
+2025-02-01T15:03:54.956Z [info]: Create Consumer: Subscribed to topic: login.auth
+2025-02-01T15:03:58.100Z [info]: Login consumer initialized successfully
+2025-02-01T15:03:58.134Z [info]: Create Consumer: Kafka consumer connected
+2025-02-01T15:03:58.140Z [info]: Create Consumer: Subscribed to topic: logout.auth
+2025-01-30T02:25:34.785Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.241Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.243Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.244Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-01-30T02:26:28.096Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.259Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.262Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.262Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-01-30T02:28:49.573Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.263Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.265Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.266Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-01-30T02:30:20.407Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.267Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.268Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.269Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-01-30T02:31:47.438Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.270Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.271Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.272Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-01-30T02:35:10.049Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.273Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.274Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.275Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-01-30T02:36:48.065Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.276Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.279Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.279Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.280Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.280Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.282Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.282Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.283Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.283Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.285Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.286Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.286Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.287Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.288Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.289Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.290Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.290Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.293Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.293Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.294Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.294Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.296Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.296Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.297Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.297Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.299Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.299Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.299Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.300Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.301Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.301Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.302Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.302Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.304Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.304Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.305Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.305Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.307Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.307Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.307Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.308Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.309Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.310Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.310Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.310Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.312Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.312Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.313Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.313Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.314Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.315Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.315Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.315Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.317Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.318Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.318Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.318Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.320Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.320Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.321Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.321Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.323Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.324Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.325Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.325Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.327Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.328Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.328Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.328Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.330Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.331Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.331Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.332Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.334Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.334Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.334Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.335Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.337Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.337Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.338Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.338Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.340Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.340Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.341Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.341Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.343Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.343Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.344Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.344Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.345Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.346Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.346Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.347Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.348Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.349Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.349Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.350Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.352Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.352Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.353Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.353Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.355Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.355Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.356Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.356Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.358Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.359Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.359Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.360Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.362Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.362Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.363Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.363Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.365Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.366Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.366Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.366Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.369Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.369Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.370Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.370Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.372Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.373Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.373Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.374Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.375Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.376Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.376Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.377Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.379Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.379Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.380Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.380Z [info]: Attempting to save token in Redis for userId: 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.382Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.382Z [info]: Token almacenado en Redis para usuario 679add5a43b5080a95dd2cca
+2025-02-01T15:03:58.383Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.383Z [info]: Attempting to save token in Redis for userId: 679ba01843b5080a95dd2ce4
+2025-02-01T15:03:58.385Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.385Z [info]: Token almacenado en Redis para usuario 679ba01843b5080a95dd2ce4
+2025-02-01T15:03:58.386Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.386Z [info]: Attempting to save token in Redis for userId: 679baadb43b5080a95dd2d0d
+2025-02-01T15:03:58.388Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.388Z [info]: Token almacenado en Redis para usuario 679baadb43b5080a95dd2d0d
+2025-02-01T15:03:58.389Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.389Z [info]: Attempting to save token in Redis for userId: 679bae2143b5080a95dd2d23
+2025-02-01T15:03:58.391Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.391Z [info]: Token almacenado en Redis para usuario 679bae2143b5080a95dd2d23
+2025-02-01T15:03:58.392Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.393Z [info]: Attempting to save token in Redis for userId: 679bafaf43b5080a95dd2d27
+2025-02-01T15:03:58.394Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.395Z [info]: Token almacenado en Redis para usuario 679bafaf43b5080a95dd2d27
+2025-02-01T15:03:58.395Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.407Z [info]: Attempting to save token in Redis for userId: 679c02c3d4299871aa4a5d70
+2025-02-01T15:03:58.408Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.409Z [info]: Token almacenado en Redis para usuario 679c02c3d4299871aa4a5d70
+2025-02-01T15:03:58.410Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.410Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.412Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.413Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.413Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.414Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.415Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.415Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.416Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.416Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.418Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.419Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.419Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.420Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.422Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.422Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.422Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.423Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.424Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.425Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.426Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.426Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.429Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.429Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.429Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.430Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.432Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.432Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.433Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.433Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.435Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.435Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.436Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.436Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.438Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.438Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.438Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.439Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.441Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.441Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.441Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.442Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.443Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.444Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.444Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.445Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.447Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.447Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.448Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.448Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.450Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.450Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.450Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.450Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.452Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.453Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.454Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.454Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.456Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.457Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.457Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.457Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.459Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.460Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.460Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.460Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.462Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.462Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.463Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.463Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.464Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.465Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.465Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.465Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.467Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.467Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.468Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.468Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.470Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.470Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.471Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.471Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.473Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.473Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.474Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.474Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.476Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.476Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.477Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.477Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.479Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.479Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.480Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.480Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.482Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.483Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.483Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.483Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.485Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.485Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.485Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.486Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.488Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.488Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.489Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.489Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.491Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.491Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.492Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.492Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.494Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.494Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.494Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.495Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.497Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.497Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.498Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.498Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.499Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.500Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.500Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.500Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.502Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.503Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.503Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.504Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.505Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.506Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.506Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.506Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.508Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.508Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.509Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.509Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.511Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.511Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.512Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.512Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.514Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.514Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.514Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.515Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.517Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.517Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.517Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.518Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.519Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.520Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.520Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.520Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.522Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.523Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:03:58.523Z [info]: Mensaje descifrado:
+2025-02-01T15:03:58.524Z [info]: Attempting to save token in Redis for userId: 679d76c3405513cf704a092c
+2025-02-01T15:03:58.525Z [info]: Token saved successfully in Redis
+2025-02-01T15:03:58.526Z [info]: Token almacenado en Redis para usuario 679d76c3405513cf704a092c
+2025-02-01T15:04:01.185Z [info]: Logout consumer initialized successfully
+2025-02-01T15:04:01.204Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.205Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.208Z [info]: Session closed successfully for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.208Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.212Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.213Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.215Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.215Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.216Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.216Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.218Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.219Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.219Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.220Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.223Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.225Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.226Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.226Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.229Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.229Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.230Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.230Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.233Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.233Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.233Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.234Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.237Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.238Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.239Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.239Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.242Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.243Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.243Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.244Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.247Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.248Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.248Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.249Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.251Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.252Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.252Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.253Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.254Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.255Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.255Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.257Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.259Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.260Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.261Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.261Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.263Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.264Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.265Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.265Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.268Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.268Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.269Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.269Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.272Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.272Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.273Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.273Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.275Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.275Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.276Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.276Z [info]: Procesando cierre de sesión para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.279Z [info]: Session not found for user 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.279Z [info]: Token eliminado exitosamente para usuario: 679add5a43b5080a95dd2cca
+2025-02-01T15:04:01.280Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.280Z [info]: Procesando cierre de sesión para usuario: 679c02c3d4299871aa4a5d70
+2025-02-01T15:04:01.282Z [info]: Session closed successfully for user 679c02c3d4299871aa4a5d70
+2025-02-01T15:04:01.282Z [info]: Token eliminado exitosamente para usuario: 679c02c3d4299871aa4a5d70
+2025-02-01T15:04:01.283Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.283Z [info]: Procesando cierre de sesión para usuario: 679c02c3d4299871aa4a5d70
+2025-02-01T15:04:01.285Z [info]: Session not found for user 679c02c3d4299871aa4a5d70
+2025-02-01T15:04:01.286Z [info]: Token eliminado exitosamente para usuario: 679c02c3d4299871aa4a5d70
+2025-02-01T15:04:01.286Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.286Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.288Z [info]: Session closed successfully for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.289Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.289Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.289Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.292Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.292Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.293Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.294Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.296Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.296Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.296Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.297Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.300Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.300Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.301Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.301Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.302Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.303Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.303Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.304Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.306Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.306Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.307Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.307Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.309Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.309Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.310Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.310Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.312Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.312Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.313Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.314Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.315Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.316Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.316Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.317Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.318Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.319Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.320Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.320Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.322Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.322Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.323Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.323Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.324Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.325Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.325Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.326Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.328Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.329Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.329Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:04:01.330Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.332Z [info]: Session not found for user 679c047bd4299871aa4a5d73
+2025-02-01T15:04:01.332Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:04:02.886Z [info]: Starting graceful shutdown...
+2025-02-01T15:04:02.897Z [info]: Redis connection closed
+2025-02-01T15:04:05.719Z [info]: Starting connection to Redis...
+2025-02-01T15:04:06.137Z [info]: Server running at http://0.0.0.0:3030
+2025-02-01T15:04:06.137Z [info]: Documentation available at http://0.0.0.0:3030/api-docs
+2025-02-01T15:04:06.149Z [info]: Connection established with Redis
+2025-02-01T15:04:06.170Z [info]: Redis client is ready for operations
+2025-02-01T15:04:06.171Z [info]: Connection to Redis established successfully
+2025-02-01T15:04:06.174Z [info]: Create Consumer: Kafka consumer connected
+2025-02-01T15:04:06.186Z [info]: Create Consumer: Subscribed to topic: login.auth
+2025-02-01T15:04:28.591Z [info]: Login consumer initialized successfully
+2025-02-01T15:04:28.632Z [info]: Create Consumer: Kafka consumer connected
+2025-02-01T15:04:28.638Z [info]: Create Consumer: Subscribed to topic: logout.auth
+2025-02-01T15:04:31.341Z [info]: Logout consumer initialized successfully
+2025-02-01T15:08:54.744Z [info]: Starting graceful shutdown...
+2025-02-01T15:08:54.750Z [info]: Redis connection closed
+2025-02-01T15:08:58.011Z [info]: Starting connection to Redis...
+2025-02-01T15:08:58.533Z [info]: Server running at http://0.0.0.0:3030
+2025-02-01T15:08:58.533Z [info]: Documentation available at http://0.0.0.0:3030/api-docs
+2025-02-01T15:08:58.547Z [info]: Connection established with Redis
+2025-02-01T15:08:58.573Z [info]: Redis client is ready for operations
+2025-02-01T15:08:58.574Z [info]: Connection to Redis established successfully
+2025-02-01T15:08:58.576Z [info]: Create Consumer: Kafka consumer connected
+2025-02-01T15:08:58.595Z [info]: Create Consumer: Subscribed to topic: login.auth
+2025-02-01T15:09:24.252Z [info]: Login consumer initialized successfully
+2025-02-01T15:09:24.311Z [info]: Create Consumer: Kafka consumer connected
+2025-02-01T15:09:24.316Z [info]: Create Consumer: Subscribed to topic: logout.auth
+2025-02-01T15:09:27.347Z [info]: Logout consumer initialized successfully
+2025-02-01T15:09:29.936Z [info]: Mensaje descifrado:
+2025-02-01T15:09:29.937Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:09:29.942Z [info]: Token saved successfully in Redis
+2025-02-01T15:09:29.943Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:09:54.826Z [info]: Starting token verification for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:09:54.827Z [info]: Verifying JWT...
+2025-02-01T15:09:54.831Z [info]: JWT verified successfully
+2025-02-01T15:09:54.831Z [info]: Looking for token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:09:54.832Z [info]: Intentando obtener token de Redis para userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:09:54.834Z [info]: Resultado de Redis: Token encontrado
+2025-02-01T15:09:54.835Z [info]: Verification completed successfully
+2025-02-01T15:09:54.835Z [info]: Fetching chat history for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:09:54.838Z [info]: History retrieved for user 679c047bd4299871aa4a5d73: 0 messages
+2025-02-01T15:09:56.243Z [info]: Saving chat history for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:09:56.246Z [info]: Chat history saved successfully
+2025-02-01T15:09:56.246Z [info]: History updated for user 679c047bd4299871aa4a5d73
+2025-02-01T15:11:00.734Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:11:00.734Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:11:00.737Z [info]: Session closed successfully for user 679c047bd4299871aa4a5d73
+2025-02-01T15:11:00.738Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:12:41.644Z [info]: Mensaje descifrado:
+2025-02-01T15:12:41.645Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:12:41.647Z [info]: Token saved successfully in Redis
+2025-02-01T15:12:41.648Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T15:12:59.818Z [info]: Mensaje cifrado recibido:
+2025-02-01T15:12:59.819Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:12:59.822Z [info]: Session closed successfully for user 679c047bd4299871aa4a5d73
+2025-02-01T15:12:59.823Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T15:47:51.239Z [info]: Mensaje descifrado:
+2025-02-01T15:47:51.268Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T15:47:51.282Z [info]: Token saved successfully in Redis
+2025-02-01T15:47:51.283Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T16:09:17.181Z [info]: Mensaje descifrado:
+2025-02-01T16:09:17.182Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T16:09:17.188Z [info]: Token saved successfully in Redis
+2025-02-01T16:09:17.188Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T16:32:50.729Z [info]: Mensaje descifrado:
+2025-02-01T16:32:50.730Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T16:32:50.734Z [info]: Token saved successfully in Redis
+2025-02-01T16:32:50.736Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T16:33:10.388Z [info]: Mensaje cifrado recibido:
+2025-02-01T16:33:10.389Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T16:33:10.397Z [info]: Session closed successfully for user 679c047bd4299871aa4a5d73
+2025-02-01T16:33:10.398Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T16:53:47.751Z [info]: Mensaje descifrado:
+2025-02-01T16:53:47.753Z [info]: Attempting to save token in Redis for userId: 679c047bd4299871aa4a5d73
+2025-02-01T16:53:47.756Z [info]: Token saved successfully in Redis
+2025-02-01T16:53:47.756Z [info]: Token almacenado en Redis para usuario 679c047bd4299871aa4a5d73
+2025-02-01T16:55:28.742Z [info]: Mensaje cifrado recibido:
+2025-02-01T16:55:28.744Z [info]: Procesando cierre de sesión para usuario: 679c047bd4299871aa4a5d73
+2025-02-01T16:55:28.752Z [info]: Session closed successfully for user 679c047bd4299871aa4a5d73
+2025-02-01T16:55:28.752Z [info]: Token eliminado exitosamente para usuario: 679c047bd4299871aa4a5d73
