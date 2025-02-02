@@ -11,8 +11,18 @@ const authLoginConsumer = require('./consumers/authLoginConsumer');
 const app = express();
 const port = process.env.PORT || 3030;
 
-// Middleware
-app.use(cors());
+
+const corsOptions = {
+  origin: '*',  // Permite todos los orígenes
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization'],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
+
+
 app.use(express.json());
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
