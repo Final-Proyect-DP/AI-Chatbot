@@ -18,11 +18,11 @@ const run = async () => {
         try {
           const encryptedMessage = JSON.parse(message.value.toString());
           const decryptedMessage = userService.decryptMessage(encryptedMessage);
-          logger.info('Mensaje descifrado:', decryptedMessage);
+          logger.info('Decrypted message:', decryptedMessage);
 
           const { userId, token } = decryptedMessage;
           if (!userId || !token) {
-            throw new Error('Mensaje no contiene userId o token');
+            throw new Error('Message does not contain userId or token');
           }
 
           // Usar redisUtils.setToken en lugar de storeUserSession

@@ -1,8 +1,8 @@
 const redisClient = require('../config/redisConfig');
 const logger = require('../config/logger');
 
-const EXPIRATION_TIME = 3600; // 1 hora en segundos
-const CHAT_EXPIRATION = 3600 * 24; // 24 horas
+
+const CHAT_EXPIRATION = 3600; 
 
 const redisUtils = {
   async setToken(userId, token) {
@@ -19,12 +19,12 @@ const redisUtils = {
 
   async getToken(userId) {
     try {
-      logger.info(`Intentando obtener token de Redis para userId: ${userId}`);
+      logger.info(`Attempting to get token from Redis for userId: ${userId}`);
       const token = await redisClient.get(userId);
-      logger.info(`Resultado de Redis: ${token ? 'Token encontrado' : 'Token no encontrado'}`);
+      logger.info(`Redis result: ${token ? 'Token found' : 'Token not found'}`);
       return token;
     } catch (error) {
-      logger.error('Error al obtener token de Redis:', error);
+      logger.error('Error getting token from Redis:', error);
       throw error;
     }
   },

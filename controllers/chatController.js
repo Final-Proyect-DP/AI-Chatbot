@@ -14,36 +14,32 @@ const chatController = {
         }
 
         try {
-            // Obtener historial del chat
+           
             let chatHistory = await redisUtils.getChatHistory(userId) || [];
             logger.info(`History retrieved for user ${userId}: ${chatHistory.length} messages`);
 
-            // Construir el contexto con el historial
             const conversationContext = chatHistory.map(msg => 
                 `${msg.role === 'usuario' ? 'user' : 'assistant'}: ${msg.content}`
             ).join('\n');
 
-            // Preparar prompt con contexto
+          
             const fullPrompt = conversationContext + 
                              `\nUser: ${message}\nAssistant:`;
 
-            // Generar respuesta
             const model = genAI.getGenerativeModel({ model: "gemini-pro" });
             const result = await model.generateContent(fullPrompt);
             const botMessage = await result.response.text();
 
-            // Actualizar historial
+  
             chatHistory.push(
                 { role: 'user', content: message },
                 { role: 'assistant', content: botMessage }
             );
 
-            // Mantener solo los últimos 10 mensajes para evitar tokens excesivos
             if (chatHistory.length > 20) {
                 chatHistory = chatHistory.slice(-20);
             }
 
-            // Guardar historial actualizado
             await redisUtils.setChatHistory(userId, chatHistory);
             logger.info(`History updated for user ${userId}`);
 
