@@ -1,13 +1,17 @@
-name: Deploy to staging Environment
+name: Deploy to production Environment
 
 on:
-  push:
-    branches: [staging]
+  pull_request:
+    types: [closed] 
+    branches: [main]
 
 jobs:
   build_docker_image:
+    if: github.event.pull_request.merged == true
     name: Build and Push Docker Image
     runs-on: ubuntu-latest
+
+
 
     outputs:
       image_tag: ${{ steps.meta.outputs.tags }}
@@ -20,13 +24,13 @@ jobs:
         env:
           PORT: ${{ secrets.PORT }}
           REDIS_HOST: ${{ secrets.REDIS_HOST }}
-          REDIS_PORT: ${{ secrets.REDIS_PORT }}
+          REDIS_PORT: ${{ secrets.REDIS_PORT_PROD }}
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
           ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
           ENCRYPTION_IV: ${{ secrets.ENCRYPTION_IV }}
           KAFKA_TOPIC_LOGIN: ${{ secrets.KAFKA_TOPIC_LOGIN }}
           KAFKA_TOPIC_LOGOUT: ${{ secrets.KAFKA_TOPIC_LOGOUT }}
-          KAFKA_BROKER: ${{ secrets.KAFKA_BROKER }}
+          KAFKA_BROKER: ${{ secrets.KAFKA_BROKER_PROD }}
           KAFKA_CLIENT_ID: ${{ secrets.KAFKA_CLIENT_ID }}
           NODE_ENV: ${{ secrets.NODE_ENV }}
           API_KEY: ${{ secrets.API_KEY }}
@@ -61,14 +65,14 @@ jobs:
         with:
           images: byvoxel/ai-chatbot
           tags: |
-            type=raw,value=staging
+            type=raw,value=production
           
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: byvoxel/ai-chatbot:staging
+          tags: byvoxel/ai-chatbot:production
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -79,26 +83,25 @@ jobs:
     strategy:
       matrix:
         ec2_instance: 
-          - ec2-54-85-167-217.compute-1.amazonaws.com
-
+          - ec2-100-27-199-46.compute-1.amazonaws.com
     steps:
       - name: Deploy Container
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ matrix.ec2_instance }}
           username: ec2-user
-          key: ${{ secrets.EC2_SSH_KEY }}
+          key: ${{ secrets.EC2_SSH_KEY_PROD1 }}
           port: 22
           timeout: "120s"
           script: |
             set -e
-            echo "Deploying image: byvoxel/ai-chatbot:staging"
+            echo "Deploying image: byvoxel/ai-chatbot:production"
             sudo docker stop ai-chatbot || true
             sudo docker rm ai-chatbot || true
-            sudo docker pull byvoxel/ai-chatbot:staging
+            sudo docker pull byvoxel/ai-chatbot:production
             sudo docker run -d \
               --name ai-chatbot \
               -p 3030:3030 \
               --restart unless-stopped \
-              byvoxel/ai-chatbot:staging
+              byvoxel/ai-chatbot:production
             sudo docker system prune -af --volumes || true
