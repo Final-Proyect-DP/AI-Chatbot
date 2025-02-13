@@ -83,14 +83,14 @@ jobs:
     strategy:
       matrix:
         ec2_instance: 
-          - ec2-54-82-5-170.compute-1.amazonaws.com
+          - ec2-54-152-15-119.compute-1.amazonaws.com
     steps:
       - name: Deploy Container
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ matrix.ec2_instance }}
           username: ec2-user
-          key: ${{ secrets.EC2_SSH_KEY_PROD1 }}
+          key: ${{ secrets.EC2_SSH_KEY_MIXED }}
           port: 22
           timeout: "120s"
           script: |
